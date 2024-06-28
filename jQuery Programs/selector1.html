@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass{
+            color:rgb(10, 10, 241);
+            background-color: yellowgreen;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").addClass("myclass").css({"border":"solid 5px green","font-size":"30px"});
+            $("#pid1").removeClass("myclass");//.css({"color":"green","background-color":"yellow"});
+            $("div").add("<h1>").html("Welcome jQuery");
+
+        });
+        
+    </script>
+</head>
+<body>
+    <p>JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat.</p>
+    <p id="pid1" class="myclass">I love India</p>
+    <div></div>
+</body>
+</html>

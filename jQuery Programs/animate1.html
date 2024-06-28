@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Animation</title>
+    <script src="jquery.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        $(document).ready(function() {
+            let isUp = true;
+
+            $(".box").click(function() {
+                if (isUp) {
+                    // Animate the box's top property to move it down by 100 pixels over 1 second
+                    $(this).animate({ top: "+=200" }, 1000);
+                } else {
+                    // Animate the box's top property to move it up by 100 pixels over 1 second
+                    $(this).animate({ top: "-=200" }, 1000);
+                }
+                
+
+                isUp = !isUp; // Toggle the state
+            });
+        });
+    </script>
+</body>
+</html>

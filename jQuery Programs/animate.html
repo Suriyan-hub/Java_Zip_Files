@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Animation</title>
+    <script src="jquery.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        $(document).ready(function() {
+            let isRight=true;
+            $(".box").click(function() {
+                console.log("Inside box"+isRight);
+                if (isRight) {
+                // Animate the box's left property to move it right by 200 pixels over 1 second
+                $(this).animate({ left: '+=200' }, 1000);
+                }
+                else{
+                    $(this).animate({ left: '-=200' }, 1000);
+                }
+                isRight = !isRight; // Toggle the state
+                console.log(isRight);
+            });
+        });
+    </script>
+</body>
+</html>

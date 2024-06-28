@@ -1,0 +1,21 @@
+<html>
+<head>
+<style>
+	.red{color:red;}
+</style>
+<script type ="text/javascript" src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		$("h1").html("This h1 tag is from JQuery using html() is smilar to innerHTML in javascript").addClass("red");
+		$("div").add("<h2>").html("Learn jQuery").css({"backgroundColor":"yellow","color":"green","fontSize":"50px"})
+			$("h2").text($("h2").text()+" Morning")
+	})
+</script>
+</head>
+<body>
+<h1>Heading Tag</h1>
+<h2>Good</h2>
+<div> </div>
+</body>
+
+</html>

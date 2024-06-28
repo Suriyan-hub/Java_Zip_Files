@@ -1,0 +1,23 @@
+body{
+    width: 500px;
+    margin:auto;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+.fields{
+    margin:0;
+    padding: 1em 0;
+}
+.title{
+    cursor: pointer;
+    font-weight: bold;
+    line-height:2em ;
+    background:rgb(222, 198, 198);
+    border-bottom: 1px solid rgb(98, 24, 24) ;
+    border-top: 1px solid rgb(131, 33, 33);
+}
+.hide{
+    display: none;
+}

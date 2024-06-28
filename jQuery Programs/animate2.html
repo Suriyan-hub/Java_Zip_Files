@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Animation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #image {
+
+            position: absolute;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img id="image" src="images/doll.jpg" alt="Image" width="350" >
+    <button id="moveLeft">Move Left</button>
+    <button id="moveRight">Move Right</button>
+    <button id="moveUp">Move Up</button>
+    <button id="moveDown">Move Down</button>
+
+    <script>
+        $(document).ready(function() {
+            $("#moveLeft").click(function() {
+                $("#image").animate({ left: '-=250' }, 1500);
+            });
+
+            $("#moveRight").click(function() {
+                $("#image").animate({ left: '+=250' }, 1500);
+            });
+
+            $("#moveUp").click(function() {
+                $("#image").animate({ top: '-=250' }, 1500);
+            });
+
+            $("#moveDown").click(function() {
+                $("#image").animate({ top: '+=250' }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>
